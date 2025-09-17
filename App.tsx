@@ -9,7 +9,7 @@ import Location from './components/Location';
 import EnrollCTA from './components/EnrollCTA';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import FloatingWhatsApp from './components/FloatingWhatsApp';
+import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
 const App: React.FC = () => {
   return (

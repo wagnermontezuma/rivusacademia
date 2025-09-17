@@ -25,7 +25,6 @@ const Structure: React.FC = () => {
                 <h3 className="text-white text-2xl font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-300">{item.name}</h3>
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-100"></div>
-              <h3 className="absolute bottom-4 left-4 text-white text-2xl font-bold">{item.name}</h3>
             </div>
           ))}
         </div>
