@@ -1,18 +1,18 @@
+import { Icon } from '@iconify/react'
 
-import React from 'react';
-
-const FloatingWhatsApp: React.FC = () => {
+export function FloatingWhatsApp() {
   return (
     <a
-      href="https://wa.me/5591999999999"
+      href={`https://api.whatsapp.com/send/?phone=5591999999999`}
       target="_blank"
-      rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg transform transition-transform hover:scale-110 z-40"
-      aria-label="Fale conosco no WhatsApp"
+      className="fixed bottom-32 right-12 z-50 md:bottom-12"
+      rel="noreferrer"
     >
-      <svg className="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.012 2.002c-5.517 0-9.99 4.473-9.99 9.99 0 2.25.748 4.332 2.015 6.01l-1.326 4.815 4.938-1.303c1.61.802 3.41 1.27 5.362 1.27 5.517 0 9.99-4.473 9.99-9.99s-4.473-9.99-9.99-9.99zm0 18.29c-1.78-.002-3.48-.48-4.9-1.35l-.352-.208-3.648.958.973-3.562-.23-.368c-.96-1.48-1.47-3.23-1.47-5.06 0-4.59 3.73-8.32 8.32-8.32 4.59 0 8.32 3.73 8.32 8.32 0 4.59-3.73 8.32-8.32 8.32zm4.52-6.25c-.246-.124-1.45-.715-1.674-.795-.225-.08-.387-.123-.55.123-.16.246-.63.795-.772.957-.145.16-.29.184-.533.06-.246-.123-1.03-.38-1.962-1.21-.724-.65-1.21-1.45-1.35-1.695-.144-.246-.015-.38.11-.504.11-.11.246-.288.37-.432.122-.144.162-.246.245-.41.082-.163.04-.305-.02-.43s-.55-1.32-.752-1.81c-.2-.48-.4-.41-.55-.41-.144 0-.306-.015-.47-.015s-.43.06-.653.307c-.225.247-.86.84-1.054 2.035-.195 1.192.885 2.36 1.01 2.52.123.163 1.74 2.65 4.22 3.72.59.252 1.05.403 1.41.516.6.195 1.14.167 1.56.1.47-.074 1.45-.59 1.65-1.16.2-.57.2-1.05.144-1.16-.057-.11-.22-.17-.464-.294z"></path></svg>
+      <Icon
+        icon="logos:whatsapp-icon"
+        className="transition-all hover:scale-105"
+        fontSize={48}
+      />
     </a>
-  );
-};
-
-export default FloatingWhatsApp;
+  )
+}
